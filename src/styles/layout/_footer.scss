@@ -1,7 +1,7 @@
 .footer {
   padding: 35px 16px;
   color: $black;
-  max-width: 1328px;
+  max-width: 1400px;
   margin: 0 auto;
 
   .footer__paragraph {
@@ -19,6 +19,7 @@
     justify-content: space-between;
 
     .footer__paragraph {
+      margin-top: 16px;
       font-size: 16px;
     }
 
