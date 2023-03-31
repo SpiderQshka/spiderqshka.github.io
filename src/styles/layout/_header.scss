@@ -1,0 +1,144 @@
+.header {
+  position: fixed;
+  background-color: $white;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 16px;
+  max-width: 1328px;
+  margin: 0 auto;
+  height: $header-height-mobile;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  &.header_open .header__menu {
+    right: 0;
+  }
+
+  .header__logo {
+    font-size: 16px;
+    color: $black;
+  }
+
+  .header__button {
+    color: $black;
+    padding: 16px;
+    line-height: 1;
+    background-color: $white;
+    border: none;
+    transform: translateX(16px);
+  }
+
+  .header__menu {
+    display: flex;
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    transition: right linear 0.2s;
+    top: $header-height-mobile;
+    height: calc(100vh - #{$header-height-mobile});
+    background-color: $white;
+    flex-direction: column;
+    padding: 24px 0 60px;
+  }
+
+  .header__menu-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-grow: 1;
+  }
+
+  .header__menu-list-item {
+    border-bottom: 1px solid $gray-light;
+  }
+
+  .header__menu-list-link {
+    display: block;
+    padding: 24px;
+    text-decoration: none;
+  }
+
+  .header__email-link {
+    align-self: flex-start;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: $black;
+    z-index: 1;
+    margin: 0 16px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 1px;
+      left: -1px;
+      right: -1px;
+      height: 8px;
+      background-color: $blue;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: $header-height-desktop;
+    padding: 0 48px;
+
+    .header__logo {
+      font-size: 26px;
+    }
+
+    .header__menu {
+      top: $header-height-desktop;
+      height: calc(100vh - #{$header-height-desktop});
+    }
+
+    .header__menu-list-link {
+      padding: 24px 48px;
+    }
+
+    .header__email-link {
+      margin: 0 48px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .header__logo {
+      font-size: 30px;
+    }
+
+    .header__button {
+      display: none;
+    }
+
+    .header__menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: static;
+      height: 100%;
+      padding: 0;
+    }
+
+    .header__menu-list {
+      display: flex;
+      margin-right: 60px;
+    }
+
+    .header__menu-list-item {
+      border-bottom: 0;
+    }
+
+    .header__menu-list-link {
+      font-size: 20px;
+      padding: 32px;
+    }
+
+    .header__email-link {
+      align-self: center;
+      font-size: 20px;
+    }
+  }
+}

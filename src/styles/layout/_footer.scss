@@ -1,0 +1,30 @@
+.footer {
+  padding: 35px 16px;
+  color: $black;
+  max-width: 1328px;
+  margin: 0 auto;
+
+  .footer__paragraph {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    padding: 35px 48px;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__paragraph {
+      font-size: 16px;
+    }
+
+    .footer__logo {
+      display: block;
+      font-size: 20px;
+    }
+  }
+}

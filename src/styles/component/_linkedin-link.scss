@@ -1,0 +1,33 @@
+.linkedin-link {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $gray-light;
+  color: $gray-dark;
+  border-radius: 50%;
+  background-color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+
+  i {
+    font-size: 24px;
+  }
+
+  @media (min-width: 768px) {
+    width: 112px;
+    height: 112px;
+
+    i {
+      font-size: 48px;
+    }
+  }
+}

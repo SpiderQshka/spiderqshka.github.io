@@ -1,0 +1,350 @@
+.main {
+  padding-top: $header-height-mobile;
+  color: $black;
+  max-width: 1328px;
+  margin: 0 auto;
+
+  .intro-section {
+    min-height: 320px;
+    padding: 60px 16px 0;
+    border-bottom: 1px solid $gray-light;
+
+    .intro-section__heading {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  .about-us-section {
+    padding: 48px 16px;
+    border-bottom: 1px solid $gray-light;
+
+    .about-us-section__title {
+      margin-bottom: 32px;
+    }
+
+    .about-us-section__paragraph {
+      margin-bottom: 42px;
+    }
+
+    .about-us-section__linkedin-block {
+      display: flex;
+      align-items: center;
+    }
+
+    .about-us-section__linkedin-block-text {
+      margin-left: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  .projects-section {
+    padding: 48px 16px 72px;
+    border-bottom: 1px solid $gray-light;
+
+    .projects-section__title {
+      margin-bottom: 56px;
+    }
+
+    .projects-section__projects-list {
+      list-style: none;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .projects-section__projects-list-item {
+      margin-bottom: 72px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .projects-section__project-name {
+      display: none;
+      margin-bottom: 0;
+      font-size: 36px;
+    }
+
+    .projects-section__project-description {
+      margin-bottom: 0;
+    }
+
+    .projects-section__project-logo {
+      max-width: 100px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .team-section {
+    padding: 48px 16px 56px;
+    border-bottom: 1px solid $gray-light;
+
+    .team-section__title {
+      margin-bottom: 32px;
+    }
+
+    .team-section__members-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .team-section__members-list-item {
+      position: relative;
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .team-section__member-name {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+
+    .team-section__member-role {
+      margin-bottom: 16px;
+    }
+
+    .team-section__member-photo {
+      width: 240px;
+      height: 240px;
+    }
+
+    .team-section__linkedin-link {
+      position: absolute;
+      bottom: 90px;
+      left: 272px;
+    }
+  }
+
+  .contacts-section {
+    padding: 48px 16px 80px;
+    border-bottom: 1px solid $gray-light;
+
+    .contacts-section__title {
+      margin-bottom: 32px;
+    }
+
+    .contacts-section__paragraph {
+      margin-bottom: 32px;
+      font-size: 20px;
+    }
+
+    .contacts-section__company-email {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 80px;
+      text-decoration: none;
+      color: $black;
+      font-size: 20px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 2px;
+        left: -2px;
+        right: -2px;
+        height: 8px;
+        background-color: $blue;
+        z-index: -1;
+      }
+    }
+
+    .contacts-section__company-name {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .contacts-section__company-address {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: $header-height-desktop;
+
+    .intro-section {
+      padding: 140px 48px 0;
+      border-bottom: 0;
+      min-height: calc(100vh - $header-height-desktop);
+
+      .intro-section__heading {
+        font-size: 48px;
+        max-width: 1165px;
+      }
+    }
+
+    .about-us-section {
+      padding: 80px 48px 96px;
+      border-bottom: 0;
+
+      .about-us-section__title {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+
+      .about-us-section__information-block {
+        max-width: 1000px;
+        margin-left: auto;
+      }
+
+      .about-us-section__paragraph {
+        font-size: 36px;
+        margin-bottom: 120px;
+      }
+
+      .about-us-section__linkedin-block-text {
+        font-size: 28px;
+        margin-left: 36px;
+      }
+    }
+
+    .projects-section {
+      padding: 80px 48px 96px;
+      border-bottom: 0;
+
+      .projects-section__title {
+        font-size: 28px;
+        margin-bottom: 64px;
+      }
+
+      .projects-section__projects-list {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .projects-section__projects-list-item {
+        margin-bottom: 24px;
+      }
+
+      .projects-section__project-description {
+        font-size: 20px;
+      }
+    }
+
+    .team-section {
+      padding: 80px 48px 96px;
+      border-bottom: 0;
+
+      .team-section__title {
+        font-size: 28px;
+        margin-bottom: 64px;
+      }
+
+      .team-section__members-list-item {
+        margin-bottom: 88px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+
+      .team-section__member-name {
+        margin-bottom: 8px;
+        font-size: 28px;
+      }
+
+      .team-section__member-role {
+        margin-bottom: 0;
+        font-size: 24px;
+      }
+
+      .team-section__member-photo {
+        width: 300px;
+        height: 300px;
+        margin: 0 56px;
+      }
+
+      .team-section__linkedin-link {
+        position: static;
+      }
+    }
+
+    .contacts-section {
+      padding: 80px 48px 190px;
+      border-bottom: 0;
+
+      .contacts-section__title {
+        margin-bottom: 64px;
+        font-size: 28px;
+      }
+
+      .contacts-section__paragraph {
+        font-size: 36px;
+        margin-bottom: 50px;
+      }
+
+      .contacts-section__company-email {
+        font-size: 36px;
+        margin-bottom: 40px;
+
+        &::after {
+          bottom: 8px;
+          left: 1px;
+          right: 1px;
+        }
+      }
+
+      .contacts-section__company-name,
+      .contacts-section__company-address {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .projects-section {
+      .projects-section__title {
+        margin-bottom: 128px;
+      }
+
+      .projects-section__projects-list {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+
+      .projects-section__projects-list-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+        position: relative;
+      }
+
+      .projects-section__project-name {
+        display: block;
+      }
+
+      .projects-section__information-block {
+        max-width: 731px;
+      }
+    }
+
+    .team-section {
+      .team-section__members-list-item {
+        margin-bottom: 56px;
+
+        &:last-of-type {
+          flex-direction: row;
+        }
+      }
+    }
+
+    .contacts-section {
+      .contacts-section__paragraph {
+        font-size: 48px;
+        margin-bottom: 50px;
+      }
+
+      .contacts-section__company-email {
+        font-size: 48px;
+
+        &::after {
+          bottom: 11px;
+        }
+      }
+    }
+  }
+}
