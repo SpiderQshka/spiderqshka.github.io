@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const anchorElement: HTMLDivElement = document.querySelector(headerLink.getAttribute("href"))
 
-        window.scrollTo({ top: anchorElement.offsetTop - header.clientHeight, behavior: "smooth" })
+        window.scrollTo({ top: anchorElement.offsetTop - header.clientHeight + 30, behavior: "smooth" })
       }),
   )
 })
