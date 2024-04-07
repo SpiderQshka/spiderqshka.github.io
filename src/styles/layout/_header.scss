@@ -4,14 +4,18 @@
   top: 0;
   right: 0;
   left: 0;
-  padding: 0 16px;
-  max-width: 1400px;
-  margin: 0 auto;
-  height: $header-height-mobile;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   z-index: 1;
+  height: $header-height-mobile;
+  padding: 0 16px;
+
+  .header__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $max-content-width;
+    margin: 0 auto;
+  }
 
   &.header_open {
     .header__menu {
@@ -28,6 +32,11 @@
   }
 
   .header__logo {
+    display: inline-block;
+    border: none;
+    background-color: $white;
+    text-align: left;
+    padding: 0;
     font-size: 16px;
     color: $black;
   }
@@ -53,9 +62,9 @@
     position: absolute;
     right: -100%;
     width: 100%;
-    transition: right linear 0.2s;
+    transition: right 0.2s linear;
     top: $header-height-mobile;
-    height: calc(100vh - #{$header-height-mobile});
+    height: calc((var(--vh) * 100) - #{$header-height-mobile});
     background-color: $white;
     flex-direction: column;
     padding: 24px 0 60px;
@@ -63,7 +72,7 @@
 
   .header__menu-list {
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     list-style: none;
     flex-grow: 1;
   }
@@ -76,6 +85,12 @@
     display: block;
     padding: 24px;
     text-decoration: none;
+    color: $gray-dark;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: $blue;
+    }
   }
 
   .header__email-link {
@@ -99,31 +114,12 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     height: $header-height-desktop;
     padding: 0 48px;
 
     .header__logo {
-      font-size: 26px;
-    }
-
-    .header__menu {
-      top: $header-height-desktop;
-      height: calc(100vh - #{$header-height-desktop});
-    }
-
-    .header__menu-list-link {
-      padding: 24px 48px;
-    }
-
-    .header__email-link {
-      margin: 0 48px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .header__logo {
-      font-size: 30px;
+      font-size: 24px;
     }
 
     .header__button {
@@ -142,6 +138,7 @@
     .header__menu-list {
       display: flex;
       justify-content: center;
+      margin-bottom: 0;
     }
 
     .header__menu-list-item {
@@ -149,13 +146,11 @@
     }
 
     .header__menu-list-link {
-      font-size: 20px;
       padding: 32px;
     }
 
     .header__email-link {
       align-self: center;
-      font-size: 20px;
       margin: 0;
     }
   }

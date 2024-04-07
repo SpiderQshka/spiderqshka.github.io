@@ -11,6 +11,13 @@
   text-decoration: none;
   cursor: pointer;
   flex-shrink: 0;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear;
+
+  &.linkedin-link_transparent {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+  }
 
   &:hover {
     background-color: $blue;
@@ -19,12 +26,12 @@
   }
 
   i {
-    font-size: 24px;
+    font-size: 28px;
   }
 
-  @media (min-width: 768px) {
-    width: 90px;
-    height: 90px;
+  @media (min-width: 1200px) {
+    width: 80px;
+    height: 80px;
 
     i {
       font-size: 40px;
