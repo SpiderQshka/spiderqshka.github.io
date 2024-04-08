@@ -1,1 +1,1 @@
-# SpiderQshka.github.io
+# spqsh.github.io
