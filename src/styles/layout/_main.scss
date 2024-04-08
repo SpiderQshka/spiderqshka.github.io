@@ -57,7 +57,7 @@
     .about-us-section__accent {
       position: relative;
       text-decoration: none;
-      text-wrap: nowrap;
+      white-space: nowrap;
       color: inherit;
 
       &::after {
@@ -124,6 +124,8 @@
     .projects-section__accent {
       position: relative;
       text-decoration: none;
+      white-space: nowrap;
+      color: inherit;
 
       &::after {
         position: absolute;
@@ -375,7 +377,7 @@
       .projects-section__projects_desktop {
         display: flex;
         align-items: flex-end;
-        gap: 260px;
+        gap: 250px;
       }
 
       .projects-section__project-information {
@@ -397,11 +399,13 @@
 
       .projects-section__projects-list-item {
         margin-bottom: 40px;
+        white-space: nowrap;
 
         a {
           display: inline-block;
           color: $gray-light;
           padding: 0;
+          padding-right: 64px;
           font-size: 36px;
           border: none;
           border-radius: 0;
@@ -409,7 +413,6 @@
 
         &.projects-section__projects-list-item_active a {
           color: $black;
-          padding-right: 64px;
           background-image: url("../../images/black-arrow.svg");
           background-repeat: no-repeat;
           background-position: 100% calc(50%);
