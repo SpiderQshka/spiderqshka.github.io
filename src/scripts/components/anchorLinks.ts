@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector("[data-hook~=header]")
   const anchorLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("[data-hook~=anchor-link]")
 
   anchorLinks.forEach(anchorLink => {
@@ -8,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const anchorElement: HTMLDivElement = document.querySelector(anchorLink.getAttribute("href"))
 
-      window.scrollTo({ top: anchorElement.offsetTop - header.clientHeight, behavior: "smooth" })
+      window.scrollTo({ top: anchorElement.offsetTop - 40, behavior: "smooth" })
     })
   })
 })
