@@ -1,8 +1,8 @@
 {
-  "name": "melnichek-investments",
+  "name": "spqsh.github.io",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/spqsh/melnichek-investments",
+  "repository": "spqsh.github.io",
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.56.0",

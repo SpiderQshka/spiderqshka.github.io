@@ -1,13 +1,17 @@
 @font-face {
-  font-family: "Automate OT";
-  font-weight: 300;
+  font-family: "DM Mono";
   font-display: swap;
-  src: url("../../fonts/automate-ot-light.woff") format("woff");
+  src: url("../../fonts/dm-mono-regular.ttf");
 }
 
 @font-face {
-  font-family: "Automate OT";
-  font-weight: 400;
+  font-family: "Rubic";
   font-display: swap;
-  src: url("../../fonts/automate-ot-regular.woff") format("woff");
+  src: url("../../fonts/rubik-regular.ttf");
+}
+
+@font-face {
+  font-family: "Satoshi";
+  font-display: swap;
+  src: url("../../fonts/satoshi-variable.ttf");
 }

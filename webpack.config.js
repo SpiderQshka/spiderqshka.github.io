@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Melnichek Investments",
+      title: "Doctorina",
       template: "src/html/index.html",
       minify: {
         removeComments: true,

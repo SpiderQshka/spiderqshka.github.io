@@ -2,9 +2,6 @@
 @import "./abstracts/colors";
 @import "./abstracts/fonts";
 
-@import "./vendors/fontawesome/scss/fontawesome.scss";
-@import "./vendors/fontawesome/scss/brands.scss";
-
 @import "./base/normalize";
 @import "./base/typography";
 @import "./base/utilities";
@@ -12,6 +9,3 @@
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/main";
-
-@import "./components/linkedin-link";
-@import "./components/loader";

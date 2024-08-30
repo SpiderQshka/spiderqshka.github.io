@@ -13,15 +13,62 @@ ul {
   margin-bottom: 0;
 }
 
-.heading {
+.heading-1 {
   line-height: 1.25;
-  letter-spacing: 1px;
-  font-family: "Automate OT", serif;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+  font-family: "Satoshi", sans-serif;
+}
+
+.heading-2 {
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+  font-family: "Satoshi", sans-serif;
+}
+
+.heading-3 {
+  line-height: 1.25;
+  letter-spacing: -1px;
+  font-weight: 400;
+  font-family: "Satoshi", sans-serif;
+}
+
+.heading-4 {
+  line-height: 1.25;
+  font-weight: 500;
+  font-family: "Satoshi", sans-serif;
+}
+
+.heading-5 {
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  font-weight: 300;
+  font-family: "DM Mono", sans-serif;
 }
 
 .body {
-  line-height: 1.35;
-  font-family: "Automate OT", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Rubic", sans-serif;
+}
+
+.caption-md {
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  font-family: "DM Mono", sans-serif;
+}
+
+.caption-sm {
+  line-height: 1.25;
+  font-weight: 300;
+  font-family: "Rubic", sans-serif;
+}
+
+.link {
+  font-weight: 400;
+  font-family: "DM Mono", sans-serif;
 }
 
 a, a:active, a:focus {
