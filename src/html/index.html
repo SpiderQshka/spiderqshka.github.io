@@ -18,7 +18,7 @@
         </button>
         <button class="header__button" data-hook="header-button" aria-label="Toggle menu">
           <img src="../images/hamburger.svg" alt="" class="header__hamburger-icon" />
-          <img src="../images/times.svg" alt="" class="header__times-icon" />
+          <img src="../images/ic_round-close.svg" alt="" class="header__times-icon" />
         </button>
         <div class="header__menu">
           <ul class="header__menu-list">
@@ -36,6 +36,9 @@
               <a class="link header__menu-list-link" href="#demo-section" data-hook="anchor-link header-link">Demo</a>
             </li>
             <li class="header__menu-list-item">
+              <a class="link header__menu-list-link" href="#for-investors-section" data-hook="anchor-link header-link">For investors</a>
+            </li>
+            <li class="header__menu-list-item">
               <a class="link header__menu-list-link" href="#team-section" data-hook="anchor-link header-link">Team</a>
             </li>
             <li class="header__menu-list-item">
@@ -50,16 +53,18 @@
     <main class="main">
       <section class="intro-section" id="intro-section">
         <div class="intro-section__content">
-          <div class="intro-section__heading-block">
-            <h1 class="heading-1 intro-section__heading">
+          <div class="intro-section__cta-block">
+            <h1 class="heading-1 intro-section__cta-block-heading">
               Doctorina — future of medicine as we envision it. Accessible to billions of people. At any moment. Without
               errors.
             </h1>
-            <button class="intro-section__button"><span class="body">Start today</span></button>
+            <a class="intro-section__cta-block-button" href="#contacts-section"
+              ><span class="body">Start today</span></a
+            >
           </div>
           <div class="intro-section__mission-block">
-            <h5 class="heading-5 intro-section__sub-heading">Mission</h5>
-            <p class="body intro-section__paragraph">
+            <h5 class="heading-5 intro-section__mission-block-heading">Mission</h5>
+            <p class="body intro-section__mission-block-paragraph">
               To provide every individual with the best <br />
               possible healthcare using AI and medical <br />
               knowledge
@@ -74,7 +79,7 @@
         <div class="solutions-section__content">
           <ul class="solutions-section__solutions-list">
             <li class="solutions-section__solutions-list-item">
-              <div class="solutions-section__solution-text-content">
+              <div class="solutions-section__solution-text-block">
                 <h2 class="heading-2 solutions-section__solution-name">Patient Experience</h2>
                 <p class="body solutions-section__solution-description">
                   With Doctorina, you can gain a clear understanding of what's happening with your health and receive
@@ -88,7 +93,7 @@
               </div>
             </li>
             <li class="solutions-section__solutions-list-item">
-              <div class="solutions-section__solution-text-content">
+              <div class="solutions-section__solution-text-block">
                 <h2 class="heading-2 solutions-section__solution-name">Doctor Support</h2>
                 <p class="body solutions-section__solution-description">
                   Doctorina also supports doctors in providing high-quality, efficient, and patient-centered care.
@@ -101,7 +106,7 @@
               </div>
             </li>
             <li class="solutions-section__solutions-list-item">
-              <div class="solutions-section__solution-text-content">
+              <div class="solutions-section__solution-text-block">
                 <h2 class="heading-2 solutions-section__solution-name">Clinics</h2>
                 <p class="body solutions-section__solution-description">
                   Our assistant can gather patient history while they are on their way to the doctor. Saving time for
@@ -114,7 +119,7 @@
               </div>
             </li>
             <li class="solutions-section__solutions-list-item">
-              <div class="solutions-section__solution-text-content">
+              <div class="solutions-section__solution-text-block">
                 <h2 class="heading-2 solutions-section__solution-name">Insurances</h2>
                 <p class="body solutions-section__solution-description">
                   Insurance companies can offer our assistant to their clients, reducing doctor visits and lowering
@@ -132,21 +137,21 @@
 
       <section class="features-section" id="features-section">
         <div class="features-section__content">
-          <div class="features-section__text-content">
-            <p class="body features-section__paragraph">
+          <div class="features-section__text-block">
+            <p class="body features-section__text-block-paragraph">
               Doctorina provides accurate, personalized health assessments accessible to everyone, everywhere, 24/7.
             </p>
-            <p class="body features-section__paragraph">
+            <p class="body features-section__text-block-paragraph">
               AI-based diagnostics leverage symptom analysis through various inputs, including text, voice files,
               images, and videos, to enhance the process of history taking and symptom evaluation.
             </p>
-            <p class="body features-section__paragraph">Available in all languages.</p>
-            <h2 class="heading-2 features-section__heading">Healthcare transformed by AI</h2>
-            <button class="features-section__button">Try it for free</button>
+            <p class="body features-section__text-block-paragraph">Available in all languages.</p>
+            <h2 class="heading-2 features-section__text-block-heading">Healthcare transformed by AI</h2>
+            <button class="features-section__text-block-button">Try it for free</button>
           </div>
-          <div class="features-section__features-content">
-            <ul class="features-section__features-list">
-              <li class="features-section__features-list-item">
+          <div class="features-section__features-block" data-hook="features-block">
+            <ul class="features-section__features-list" data-hook="features-list">
+              <li class="features-section__features-list-item" data-hook="features-list-item">
                 <h3 class="heading-3 features-section__feature-name">24/7 Availability</h3>
                 <p class="body features-section__feature-description">
                   AI-based diagnostics using symptom analysis (text, voice files, images, and videos) — history taking
@@ -154,21 +159,21 @@
                   medical care.
                 </p>
               </li>
-              <li class="features-section__features-list-item">
+              <li class="features-section__features-list-item" data-hook="features-list-item">
                 <h3 class="heading-3 features-section__feature-name">Enhancing Diagnostic Accuracy</h3>
                 <p class="body features-section__feature-description">
                   Doctorina minimizes the risk of misdiagnosis and helps identify probable healthcare threats and
                   conditions.
                 </p>
               </li>
-              <li class="features-section__features-list-item">
+              <li class="features-section__features-list-item" data-hook="features-list-item">
                 <h3 class="heading-3 features-section__feature-name">Universal Accessibility</h3>
                 <p class="body features-section__feature-description">
                   No matter what language you speak, Doctorina will understand you. Available on Android, iOS, and web,
                   it provides high-quality healthcare knowledge wherever you are, on any device.
                 </p>
               </li>
-              <li class="features-section__features-list-item">
+              <li class="features-section__features-list-item" data-hook="features-list-item">
                 <h3 class="heading-3 features-section__feature-name">Personalized Health Records</h3>
                 <p class="body features-section__feature-description">
                   Doctorina securely stores your health information in personalized patient records. You can view,
@@ -184,8 +189,12 @@
       <section class="demo-section" id="demo-section">
         <div class="demo-section__content">
           <h2 class="heading-2 demo-section__heading">See how it works</h2>
-          <video class="demo-section__video" controls>
-            <source src="../images/demo.mp4" type="video/mp4" />
+          <video class="demo-section__video demo-section__video_mobile" controls>
+            <source src="../images/demo-mobile.mp4" type="video/mp4" />
+          </video>
+
+          <video class="demo-section__video demo-section__video_desktop" controls>
+            <source src="../images/demo-desktop.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
@@ -198,25 +207,25 @@
               <span class="caption-md team-section__team-member-number">01</span>
               <span class="heading-4 team-section__team-member-name">Darya Tsaryk</span>
               <span class="body team-section__team-member-position">Co-founder & CEO</span>
-              <img class="team-section__team-member-photo" src="../images/hanna-plotnitskaya.jpeg" alt="" />
+              <img class="team-section__team-member-photo" src="../images/1680284222565.jpeg" alt="" />
             </li>
             <li class="team-section__team-members-list-item">
               <span class="caption-md team-section__team-member-number">02</span>
               <span class="heading-4 team-section__team-member-name">Alexander Seletsky</span>
               <span class="body team-section__team-member-position">Co-founder & COO</span>
-              <img class="team-section__team-member-photo" src="../images/hanna-plotnitskaya.jpeg" alt="" />
+              <img class="team-section__team-member-photo" src="../images/1637307066595.jpeg" alt="" />
             </li>
             <li class="team-section__team-members-list-item">
               <span class="caption-md team-section__team-member-number">03</span>
               <span class="heading-4 team-section__team-member-name">Hanna Plotnitskaya, M. D.</span>
               <span class="body team-section__team-member-position">Co-founder & CMO</span>
-              <img class="team-section__team-member-photo" src="../images/hanna-plotnitskaya.jpeg" alt="" />
+              <img class="team-section__team-member-photo" src="../images/1723347548466.jpeg" alt="" />
             </li>
             <li class="team-section__team-members-list-item">
               <span class="caption-md team-section__team-member-number">04</span>
               <span class="heading-4 team-section__team-member-name">Yury Melnichek</span>
               <span class="body team-section__team-member-position">Co-founder & Investo</span>
-              <img class="team-section__team-member-photo" src="../images/hanna-plotnitskaya.jpeg" alt="" />
+              <img class="team-section__team-member-photo" src="../images/1723420615449.jpeg" alt="" />
             </li>
           </ul>
         </div>
@@ -229,25 +238,64 @@
             <p class="body contacts-section__book-a-meeting-paragraph">
               Book a meeting to chat with one of our team members
             </p>
-            <a href="" class="body contacts-section__book-a-meeting-link">Book a Meeting Now</a>
-            <div class="contacts-section__disclaimer">
-              <p class="link contacts-section__disclaimer-heading">Disclaimer</p>
-              <p class="body contacts-section__disclaimer-paragraph">
-                Doctorina is currently in beta testing. It does not replace professional medical advice, diagnosis, or
-                treatment and does not operate under a medical license. Always consult with a licensed healthcare
-                provider for any! medical concerns.
-              </p>
-            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScKxkhISKveZCs-pnf4lYH395uwpE-2KyJF0vjewQeE2NXUfw/viewform"
+              class="body contacts-section__book-a-meeting-link"
+              >Book a Meeting Now</a
+            >
+            <ul class="contacts-section__socials-list">
+              <li class="contacts-section__socials-list-item">
+                <a href="" class="contacts-section__socials-list-link" rel="noopener noreferrer" target="_blank">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </li>
+              <li class="contacts-section__socials-list-item">
+                <a href="" class="contacts-section__socials-list-link" rel="noopener noreferrer" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="contacts-section__socials-list-item">
+                <a href="" class="contacts-section__socials-list-link" rel="noopener noreferrer" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="contacts-section__socials-list-item">
+                <a href="" class="contacts-section__socials-list-link" rel="noopener noreferrer" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="contacts-section__socials-list-item">
+                <a href="" class="contacts-section__socials-list-link" rel="noopener noreferrer" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="contacts-section__join-waitlist">
             <p class="body contacts-section__join-waitlist-paragraph">
               Drop your email in the box below to be the first in line when Doctorina launches. We'll give you a shout
               as soon as it's ready. Get ready to revolutionize global healthcare — right at your fingertips!
             </p>
-            <form action="" class="contacts-section__join-waitlist-form">
-              <input type="text" class="contacts-section__join-waitlist-input" placeholder="Enter your email" />
-              <button class="contacts-section__join-waitlist-button">Join waitlist</button>
+            <form data-hook="contact-form" class="contacts-section__join-waitlist-form">
+              <input
+                type="email"
+                required
+                class="contacts-section__join-waitlist-input"
+                placeholder="Enter your email"
+                data-hook="contact-form-input"
+              />
+              <button class="contacts-section__join-waitlist-button" data-hook="contact-form-button" type="submit">
+                Join waitlist
+              </button>
             </form>
+          </div>
+          <div class="contacts-section__disclaimer">
+            <p class="link contacts-section__disclaimer-heading">Disclaimer</p>
+            <p class="body contacts-section__disclaimer-paragraph">
+              Doctorina is currently in beta testing. It does not replace professional medical advice, diagnosis, or
+              treatment and does not operate under a medical license. Always consult with a licensed healthcare
+              provider for any! medical concerns.
+            </p>
           </div>
         </div>
       </section>
@@ -256,29 +304,35 @@
       <div class="footer__content">
         <ul class="footer__navigation-list">
           <li class="footer__navigation-list-item">
-            <a class="link footer__navigation-list-link" href="#solutions-section" data-hook="anchor-link">Solutions</a>
+            <a class="caption-sm footer__navigation-list-link" href="#solutions-section" data-hook="anchor-link">Solutions</a>
           </li>
           <li class="footer__navigation-list-item">
-            <a class="link footer__navigation-list-link" href="#features-section" data-hook="anchor-link">Features</a>
+            <a class="caption-sm footer__navigation-list-link" href="#features-section" data-hook="anchor-link">Features</a>
           </li>
           <li class="footer__navigation-list-item">
-            <a class="link footer__navigation-list-link" href="#demo-section" data-hook="anchor-link">Demo</a>
+            <a class="caption-sm footer__navigation-list-link" href="#demo-section" data-hook="anchor-link">Demo</a>
           </li>
           <li class="footer__navigation-list-item">
-            <a class="link footer__navigation-list-link" href="#team-section" data-hook="anchor-link">Team</a>
+            <a class="caption-sm footer__navigation-list-link" href="#for-investors-section" data-hook="anchor-link">For investors</a>
           </li>
           <li class="footer__navigation-list-item">
-            <a class="link footer__navigation-list-link" href="#contacts-section" data-hook="anchor-link">Contacts</a>
+            <a class="caption-sm footer__navigation-list-link" href="#team-section" data-hook="anchor-link">Team</a>
+          </li>
+          <li class="footer__navigation-list-item">
+            <a class="caption-sm footer__navigation-list-link" href="#contacts-section" data-hook="anchor-link">Contacts</a>
           </li>
         </ul>
         <ul class="footer__fine-print-list">
           <li class="footer__fine-print-list-item">
-            <a href="" class="link footer__fine-print-list-link">Terms and Conditions</a>
+            <a href="/terms-and-conditions" class="caption-sm footer__fine-print-list-link">Terms and Conditions</a>
           </li>
           <li class="footer__fine-print-list-item">
-            <a href="" class="link footer__fine-print-list-link">Privacy Policy</a>
+            <a href="/privacy-policy" class="caption-sm footer__fine-print-list-link">Privacy Policy</a>
           </li>
         </ul>
+        <div class="footer__copyright">
+          <p class="caption-sm footer__copyright-paragraph">© 2024 Doctorina. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   </body>

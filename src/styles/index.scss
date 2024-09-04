@@ -2,6 +2,9 @@
 @import "./abstracts/colors";
 @import "./abstracts/fonts";
 
+@import "./vendors/fontawesome/scss/fontawesome.scss";
+@import "./vendors/fontawesome/scss/brands.scss";
+
 @import "./base/normalize";
 @import "./base/typography";
 @import "./base/utilities";

@@ -5,6 +5,7 @@
   "repository": "spqsh.github.io",
   "license": "MIT",
   "devDependencies": {
+    "@types/scrollbooster": "3.0.3",
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
     "css-loader": "6.7.3",
@@ -30,5 +31,9 @@
     "lint": "eslint --quiet . --ext .js,.ts",
     "predeploy": "webpack --mode production",
     "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@emailjs/browser": "4.4.1",
+    "scrollbooster": "3.0.2"
   }
 }
